@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSNWILL</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<script>
+function login(){
+let usuario = document.getElementById("usuario").value;
+let senha = document.getElementById("senha").value;
+
+if(usuario == "wilian" && senha == "12345"){
+    alert("bem vindo à playstaion network,wilian!");
+    mostrarHome();
+    esconderLogin();
+}
+}
+</script>
+
+<script>
+function logout(){
+let telaHome = document.getElementById("home").style.display= "none";
+let telaLogin = document.getElementById("login").style.display= "block";
+
+}
+
+function mostrarHome(){
+let telaHome = document.getElementById("home").style.display= "block";
+
+}
+
+function esconderLogin(){
+let telaLogin = document.getElementById("login").style.display= "none";
+}
+
+</script>
+
+<body>
+ <section class="bgfundo" id="login">
+        <center><div><h1 style="font-family: 'arial', sans-serif; font-size: 24px; color: rgb(201, 201, 201);"><h1><b>PLAYSTATION NETWORK</b></h1></h1><div></center>
+            <center><b><i><h2><p>UM MUNDO DE INÚMERAS VIDAS E POSSIBILIDADES</i></h2></p></b></center>
+        <center><input id="usuario" type="text" placeholder="Digite o usuario" ><br></center>
+        <center><input id="senha" type="password" placeholder="Digite a senha" ><br></center>
+        <center> <input type="button" value="Entrar" onclick="login()" ><br></center>
+        
+
+       <style>
+        .bgfundo {
+            background-image: url('https://media.criticalhit.net/2022/02/sony_playstation_logo_blue-850x477.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+         </style>
+
+       
+
+    </section>
+
+    <section class= "bgfundo" id="home" style="display: none; color: white;"> 
+      <h1><b><center>  <div class=""><h1>WILIAN MANUEL RODRIGUES CORREIA</h1></div></center></b></h1>
+      <p><center><h3><i><b>QUE JOGO PRETENDE JOGAR HOJE?</b></i></h3></center></p>
+    <center> <input type="button" value="Logout" onclick="logout()"><br></center>
+    </section>
+</body>
+</html>
+    
